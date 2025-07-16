@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "ef40",
+      "username": "user1",
+      "age": "23",
+      "phoneno": "1234567890",
+      "address": "akashganga soc katargam surat gujarat",
+      "gender": "male",
+      "agree": false
+    },
+    {
+      "id": "d0f1",
+      "username": "admin",
+      "age": "67",
+      "phoneno": "1234567890",
+      "address": "surat",
+      "gender": "male",
+      "agree": true
+    }
+  ]
+}

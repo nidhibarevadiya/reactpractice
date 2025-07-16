@@ -3,10 +3,11 @@
 const Parenttochildrendering = () => {
     return (
         <>
-            <div>
+            <div className="m-2">
                 <PlayButton />
                 <UploadButton />
                 <RestartButton />
+                <LogoutButton/>
             </div>
         </>
     )
@@ -22,15 +23,7 @@ function Button({ onClick, children }) {
 }
 
 function PlayButton({ }) {
-    //   function handlePlayClick() {
-    //     alert(`Playing`);
-    //   }
-
-    //   return (
-    //     <Button onClick={handlePlayClick}>
-    //       Play 
-    //     </Button>
-    //   );
+ 
 
     return (
         <Button onClick={() => alert('Plaing!')}>
@@ -52,6 +45,15 @@ function RestartButton() {
     return (
         <Button onClick={() => alert('Restarting!')}>
             Restart
+        </Button>
+    );
+}
+
+
+function LogoutButton() {
+    return (
+        <Button onClick={() => alert('Restarting!')}>
+            logout
         </Button>
     );
 }
