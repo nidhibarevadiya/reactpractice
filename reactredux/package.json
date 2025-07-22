@@ -1,5 +1,5 @@
 {
-  "name": "redux",
+  "name": "reactredux",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,12 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "flowbite-react patch"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
-    "flowbite-react": "^0.11.9",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
