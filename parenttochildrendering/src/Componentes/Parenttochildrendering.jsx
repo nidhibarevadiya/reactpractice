@@ -22,7 +22,7 @@ function Button({ onClick, children }) {
     );
 }
 
-function PlayButton({ }) {
+function PlayButton() {
  
 
     return (
