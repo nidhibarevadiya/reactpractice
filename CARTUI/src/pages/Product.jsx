@@ -46,7 +46,11 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart , addProduct } from "../cart/cartSlice";
+import { addToWish, addProducts } from "../cart/wishlistslice";
+
 import { selectProducts } from "../cart/cartSelectors";
+// import { addToWish  } from "../cart/wishlistslice";
+
 
 const Product = () => {
 
@@ -63,6 +67,8 @@ const Product = () => {
     const data = await res.json();
     setProductData(data);
     dispatch(addProduct(data))
+    dispatch(addProducts(data)) // ✅ Correct: comes from wishlistSlice
+
   };
   
   useEffect(() => {
@@ -93,6 +99,9 @@ const Product = () => {
                   </div>
                   <div>
                     <button onClick={() => dispatch(addToCart(item.id))} className="btn text-lg p-3 rounded-none">ADD CART</button>
+                  </div>
+                   <div>
+                    <button onClick={() => dispatch(addToWish(item.id))} className="btn text-lg p-3 rounded-none">ADD wish</button>
                   </div>
                 </div>
               </div>

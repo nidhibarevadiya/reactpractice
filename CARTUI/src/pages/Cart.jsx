@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { selectCartProducts } from "../cart/cartSelectors";
+import { addToCart } from "../cart/cartSlice";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const Cart = () => {
                 </div>
                 <div>
                   <button
-                    onClick={() => dispatch(addToCart(item.id))}
+                    onClick={() => dispatch( addToCart (item.id) )}
                     className="btn text-lg p-3 rounded-none"
                   >
                     ADD CART
